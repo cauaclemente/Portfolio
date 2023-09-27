@@ -22,7 +22,7 @@
 
   header{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     width: 100%;
     height: 40px;
   }
@@ -314,7 +314,7 @@ h4 {
 .slide {
     width: 25%;
     position: relative;
-    transition: 5s;
+    transition: 6s;
 }
 
 .slide img{
@@ -454,6 +454,7 @@ textarea {
     margin-bottom: 25px;
     font-family: 'Oswald', sans-serif;
     font-size: 27px;
+    text-align: center;
 }
 
  button {
@@ -526,69 +527,112 @@ textarea:focus {
 
   @media (max-width: 420px) {
     .hero-container{
+      max-width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       padding: 10px 30px;
       text-align: center;
-      max-width: 100%;
     }
     .menu{
       cursor: pointer;
       position: fixed;
       top: 20px;
-      right: 40px;
+      margin-left: 50%;
+      
     }
     .menu.ativo .bar:nth-child(1){
-      transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
     }
     .menu.ativo .bar:nth-child(2){
-      opacity: 0;
+        opacity: 0;
     }
     .menu.ativo .bar:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
     }
     .menu .bar{
-      display: block;
-      width: 28px;
-      height: 3px;
-      border-radius: 3px;
-      background-color: #D870DB;
-      margin: 5px auto;
+        display: block;
+        width: 28px;
+        height: 3px;
+        border-radius: 3px;
+        background-color: #D870DB;
+        margin: 5px auto;
     }
     .profile-container{
-      flex-direction: column;
-      align-items: center;
-      height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 130%;
+        
     }
     .profile-content{
-      width: 100%;
+        width: 98%;
+        margin-right: 30px;
     }
     .profile-card{
-      border-radius: 0%;
-      width: 88%;
-      margin-top: 0;
-      margin-left: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0%;
+        width: 88%;
+        height: 90%;
+        margin-top: 10px;
     }
+
+    .icon-item {
+       width: 20%;
+       height: auto;
+       margin: 0 30px;
+       margin-right: 10px;
+    }
+    
+    .icon-item1 {
+       width: 20%;
+       height: auto;
+       margin: 10px 30px;
+       margin-right: 10px;
+    }
+    
     .profile-sinopse{
-      margin-left: 0;
-      width: 93%;
+        width: 93%;
+        height: 100%;
+        margin-bottom: 10px;
     }
-    .project-content{
-      display: none;
+
+    .project-container{
+        height: 95%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
+
+    .slider{
+        margin-top: 150px;
+        width: 100%;
+        height: 80%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 15px;
+        margin-left: -95px;
+    }
+    .slide img {
+        width: 500px;
+    }
+
+    .manual-navigation {
+        margin-top: 110%;
+    }
+
+    .info {
+        text-align: center;
+    }
+
     form{
       width: 85%;
       height: 80%;
     }
-    #input-textarea{
-      min-width: 95%;
-      max-width: 95%;
-      min-height: 170px;
-      max-height: 170px;
-    }
-    #send-button{
-      margin-left: 100px;
-    }
+    
     nav{
       width: 50%;
       position: static;
@@ -604,37 +648,87 @@ textarea:focus {
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      background-color: #fff;
+      background-color: #ff0000;
       gap: -10px;
       transition: 0.3s;
     }
-    .nav-menu.ativo{
-      right: 0%;
-      z-index: 2;
-    }
-    li{
-      color: #000;
-    }
-    .tecnologies{
-      width: 23%;
-      height: 105%;
-    }
-    .slider{
-      width: 340px;
-      height: 200px;
-    }
-    .projects-img img{
-      width: 340px;
-      height: 200px;
-    }
-    .projects-description{
-      text-align: center;
-      color: #fff;
-      font-size: 17px;
-      margin: 10px;
-    }
-    .btn-container{
-      margin: 20px;
+
+    .card-formulario {
+        width: 300px;
+        height: 700px;
     }
 
-  }
+    button {
+        margin-left: 60px;
+    }
+
+}
+
+@media (min-width: 420px) and (max-width: 1024px){
+    .hero-container {
+        justify-content: space-around;  
+        padding: 10px 30px ;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        width: 50%;
+        display: flex;
+        position: fixed;
+        margin: -100px -100px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .profile-card {
+        width: 382px;
+    }
+
+    .profile-sinopse{
+        margin-bottom: 15px;
+    }
+
+    .info {
+        text-align: center;
+        font-size: 17px;
+        margin: 10px;
+    }
+
+    .slider {
+        width: 520px;
+        height: 600px;
+        margin-left: -100px;
+    }
+
+    .slide img {
+        width: 600px;
+    }
+
+    .manual-navigation {
+        margin-top: 500px;
+    }
+
+}
+
+
