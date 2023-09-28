@@ -687,6 +687,11 @@ textarea:focus {
         display: none;
     }
 
+    .content-container {
+        height: 110%;
+        width: 100%;
+    }
+
     .profile-container {
         display: flex;
         flex-direction: column;
@@ -703,10 +708,13 @@ textarea:focus {
 
     .profile-card {
         width: 382px;
+        padding-left: 1px;
     }
 
     .profile-sinopse{
         margin-bottom: 15px;
+        padding-left: 1px;
+        width: 400px;
     }
 
     .info {
@@ -715,20 +723,139 @@ textarea:focus {
         margin: 10px;
     }
 
+    .profile-container {
+        height: 110%;
+        width: 100%;
+        
+    }
+
     .slider {
-        width: 520px;
+        width: 480px;
         height: 600px;
-        margin-left: -100px;
+        margin-left: -150px;
+        padding-left: 5px;
     }
 
     .slide img {
-        width: 600px;
+        width: 500px;
     }
 
     .manual-navigation {
-        margin-top: 500px;
+        margin-top: 400px;
+        margin-left: -90px;
+    }
+
+    .container-formulario {
+        height: 130%;
+        width: 100%;
+        
+    }
+
+    .card-formulario {
+        height: 70%;
+        width: 40%;
+        margin-top: 10%;
+        margin-bottom: 50px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    button {
+        margin-left: 70px;
     }
 
 }
 
+@media (min-width: 1030px) {
+    .profile-card {
+        margin-left: -100px;
+    }
+
+    .manual-btn {
+        margin-top: 150px
+    }
+}
+
+@media (max-width:420px){
+    .hero-container  {
+        background-position: 60% ;
+    }
+
+    .content-container {
+        height: 110%;
+    }
+    
+    .project-container {
+        height: 800px;
+        width: 100%;
+    }
+
+    .profile-card {
+        width: 80%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .profile-sinopse {
+        width: 90%;
+    }
+
+    .container-formulario {
+        height: 130%;
+        width: 100%;
+        
+    }
+
+    .card-formulario {
+        height: 70%;
+        width: 60%;
+        margin-top: 10%;
+        margin-bottom: 50px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    button {
+        margin-left: 70px;
+    }
+
+    .manual-btn {
+        margin-top: 100px;
+    }
+
+    .manual-navigation {
+        margin-bottom: 40px;
+    }
+}  
+
+@media (max-width: 340px) {
+    .manual-btn {
+        margin-top: 150px;
+    }
+    
+    .profile-card {
+        padding: 1px;
+        margin-left: 30px;
+        width: 85%;
+    }
+
+    .profile-sinopse {
+        padding: 1px;
+        width: 85%;
+        height: 500px;
+    }
+
+    .slide img {
+        width: 110%;
+    }
+
+    .manual-navigation {
+        margin-left: -70px;
+        margin-bottom: 70px;
+    }
+}
 
