@@ -821,7 +821,7 @@ textarea:focus {
 
 }
 
-@media (min-width: 420px) and (max-width: 1024px){
+@media (min-width: 420px) and (max-width: 1020px){
     .hero-container {
         justify-content: space-around;  
         padding: 10px 30px ;
@@ -886,6 +886,7 @@ textarea:focus {
         width: 480px;
         height: 600px;
         margin-left: -150px;
+        margin-right: -100px;
         padding-left: 5px;
     }
 
@@ -929,6 +930,8 @@ textarea:focus {
     .manual-btn {
         margin-top: 150px
     }
+
+    
 }
 
 @media (max-width:420px){
@@ -988,6 +991,7 @@ textarea:focus {
 @media (max-width: 340px) {
     .manual-btn {
         margin-top: 150px;
+        margin-right: 90px;
     }
     
     .profile-card {
@@ -1055,6 +1059,42 @@ textarea:focus {
 
     button {
         margin-left: 50px;
+    }
+}
+
+@media (max-width: 540px) {
+    .slider {
+        width: 400px;
+        height: 600px;
+        margin-left: -150px;
+        margin-right: -140px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 440px){
+    .slider {
+        width: 250px;
+        height: 600px;
+        margin-left: -170px;
+        margin-right: -170px;
+        padding-left: 5px;
+    }
+
+    .slide img {
+        width: 300px;
+    }
+
+    .manual-btn{
+        margin-bottom: 50px;
+        margin-right: 25px;
+    }
+}
+
+@media (max-width:400px) {
+    .manual-btn {
+        margin-bottom: 120px;
+        margin-right: 70px;
     }
 }
 
