@@ -1,35 +1,34 @@
+const Menu = document.querySelector(".menu");
+const Bar = document.querySelector(".navbar");
 
-const Menu = document.querySelector('.menu')
-const Bar = document.querySelector('.nav-menu')
+Menu.addEventListener("click", () => {
+  Menu.classList.toggle("ativo");
+  Bar.classList.toggle("ativo");
+});
 
-Menu.addEventListener('click', () => {
-  Menu.classList.toggle('ativo')
-  Bar.classList.toggle('ativo')
-})
-document.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => {
-    Menu.classList.remove('ativo');
-    Bar.classList.remove('ativo');
+document.querySelectorAll("a").forEach((a) => {
+  a.addEventListener("click", () => {
+    Menu.classList.remove("ativo");
+    Bar.classList.remove("ativo");
   });
 });
 
-var radio = document.querySelectorAll('.manual-btn')
-var count =1
+var radio = document.querySelectorAll(".manual-btn");
+var count = 1;
 
-document.getElementById('radio1').checked =true;
+document.getElementById("radio1").checked = true;
 
-setInterval( function(){
+setInterval(function () {
   nextImage();
-}, 6000)
+}, 6000);
 
-function nextImage(){
-    count++
-    if(count > 4){
-        count = 1
-    }
+function nextImage() {
+  count++;
+  if (count > 4) {
+    count = 1;
+  }
 
-
-document.getElementById('radio'+count).checked =true;
+  document.getElementById("radio" + count).checked = true;
 }
 
 class FormSubmit {
@@ -42,6 +41,7 @@ class FormSubmit {
     }
     this.sendForm = this.sendForm.bind(this);
   }
+
 
   displaySuccess() {
     this.form.innerHTML = this.settings.success;
@@ -97,4 +97,3 @@ const formSubmit = new FormSubmit({
   error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
 });
 formSubmit.init();
-  

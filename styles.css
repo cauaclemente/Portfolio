@@ -22,9 +22,10 @@
 
   header{
     display: flex;
-    justify-content: space-around;
     width: 100%;
-    height: 40px;
+    background: radial-gradient(black, transparent);
+    z-index: 1;
+     
   }
 .hero-container{
     height: 100vh;
@@ -49,17 +50,24 @@ h1 {
 }
 
 nav {
-    width: 50%;
+    width: 100%;
+    height: 60px;
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    background: radial-gradient(black, transparent);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
 ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 700px;
+    width: 50%;
+    padding: 0px;
 }
 
 li {
@@ -239,16 +247,12 @@ h4 {
     text-align: center;
 }
 
-.icon-item {
-    width: 20%;
-    height: auto;
-    margin: 0 24px;
-}
-
-.icon-item1 {
-    width: 20%;
-    height: auto;
-   margin: 10px 24px;
+.icon-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 15px;
+    margin-top: 15px;
 }
 
 .profile-sinopse{
@@ -525,7 +529,172 @@ textarea:focus {
 }
 
 
-  @media (max-width: 420px) {
+@media (max-width: 767px) {
+    
+    .hero-container {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 30px;
+        text-align: center;
+    }
+
+    .navbar {
+        display: none;
+        width: 93%;
+        height: auto;
+        transform: none;
+        padding: 18px 20px;
+        top: 0;
+        left: 0;
+    }
+
+    .navbar.ativo {
+        display: block !important;
+        
+    }
+
+    .nav-menu {
+        right: -100%;
+        margin-top: 13%;
+        margin-left: 10%;
+        width: 90%;
+        height: 95%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: -10px;
+        transition: 0.3s;
+    }
+
+    .menu {
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 120px;
+        z-index: 2;
+    }
+
+    .menu.ativo .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu.ativo .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu .bar {
+        display: block;
+        width: 28px;
+        height: 3px;
+        border-radius: 3px;
+        background-color: #d870db;
+        margin: 5px auto;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 130%;
+    }
+
+    .profile-content {
+        width: 98%;
+        margin-right: 30px;
+    }
+
+    .profile-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0%;
+        width: 88%;
+        height: 90%;
+        margin-top: 10px;
+    }
+
+    .profile-sinopse {
+        width: 93%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+    .project-container {
+        height: 95%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slider {
+        margin-top: 150px;
+        width: 100%;
+        height: 80%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 15px;
+        margin-left: -95px;
+    }
+
+    .slide img {
+        width: 500px;
+    }
+
+    .manual-navigation {
+        margin-top: 110%;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    form {
+        width: 85%;
+        height: 80%;
+    }
+
+    .card-formulario {
+        width: 300px;
+        height: 700px;
+    }
+
+    button {
+        margin-left: 60px;
+    }
+} 
+
+@media (max-width: 580px) {
+    .menu {
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 200px;
+        z-index: 2;
+    }
+
+    .navbar {
+        display: none;
+        width: 78%;
+        height: auto;
+        transform: none;
+        padding: 18px 20px;
+        top: 0;
+        left: 0;
+    }
+
+    .nav-menu {
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 420px) {
     .hero-container{
       max-width: 100%;
       display: flex;
@@ -533,30 +702,7 @@ textarea:focus {
       padding: 10px 30px;
       text-align: center;
     }
-    .menu{
-      cursor: pointer;
-      position: fixed;
-      top: 20px;
-      margin-left: 50%;
-      
-    }
-    .menu.ativo .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .menu.ativo .bar:nth-child(2){
-        opacity: 0;
-    }
-    .menu.ativo .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    .menu .bar{
-        display: block;
-        width: 28px;
-        height: 3px;
-        border-radius: 3px;
-        background-color: #D870DB;
-        margin: 5px auto;
-    }
+    
     .profile-container{
         flex-direction: column;
         align-items: center;
@@ -579,14 +725,14 @@ textarea:focus {
     }
 
     .icon-item {
-       width: 20%;
+       width: 60%;
        height: auto;
        margin: 0 30px;
        margin-right: 10px;
     }
     
     .icon-item1 {
-       width: 20%;
+       width: 60%;
        height: auto;
        margin: 10px 30px;
        margin-right: 10px;
@@ -639,19 +785,7 @@ textarea:focus {
       transform: none;
       padding: 18px 20px;
     }
-    .nav-menu{
-      position: fixed;
-      right: -100%;
-      top: 70px;
-      width: 90%;
-      height: 95%;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      background-color: #ff0000;
-      gap: -10px;
-      transition: 0.3s;
-    }
+    
 
     .card-formulario {
         width: 300px;
@@ -660,6 +794,29 @@ textarea:focus {
 
     button {
         margin-left: 60px;
+    }
+
+    .menu {
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 280px;
+        z-index: 2;
+    }
+
+    .navbar {
+        display: none;
+        width: 300px;
+        height: 230px;
+        transform: none;
+        padding: 18px 20px;
+        top: 0;
+        left: 0;
+    }
+
+    .nav-menu {
+        margin-top: 05%;
+        
     }
 
 }
@@ -677,14 +834,10 @@ textarea:focus {
     }
 
     nav {
-        width: 50%;
+        width: 100%;
         display: flex;
         position: fixed;
         margin: -100px -100px;
-    }
-
-    .menu {
-        display: none;
     }
 
     .content-container {
@@ -768,7 +921,7 @@ textarea:focus {
 
 }
 
-@media (min-width: 1030px) {
+@media (min-width: 1020px) {
     .profile-card {
         margin-left: -100px;
     }
@@ -841,8 +994,23 @@ textarea:focus {
         padding: 1px;
         margin-left: 30px;
         width: 85%;
+        height: 600px;
     }
 
+    .icon-item {
+        width: 45%;
+        height: auto;
+        margin: 0 30px;
+        margin-right: 10px;
+     }
+
+     .icon-item1 {
+        width: 45%;
+        height: auto;
+        margin: 0 30px;
+        margin-right: 10px;
+     }
+  
     .profile-sinopse {
         padding: 1px;
         width: 85%;
@@ -856,6 +1024,37 @@ textarea:focus {
     .manual-navigation {
         margin-left: -70px;
         margin-bottom: 70px;
+    }
+
+    .menu {
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 330px;
+        z-index: 2;
+    }
+
+    .navbar {
+        display: none;
+        width: 300px;
+        height: 230px;
+        transform: none;
+        padding: 18px 20px;
+        top: 0;
+        left: 0;
+    }
+
+    .nav-menu {
+        margin-top: 05%;
+        
+    }
+
+    .header-title {
+        font-size: 52px;
+    }
+
+    button {
+        margin-left: 50px;
     }
 }
 

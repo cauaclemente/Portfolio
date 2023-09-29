@@ -9,17 +9,21 @@
 <body>
     <section class="hero-container" id="#inicio">
         <header>
-            <nav>
-              <ul class="nav-menu">
-                <a class="list-item" href="#inicio">
-                    <li>Início</li></a>
-                <a class="list-item" href="#profile">
-                    <li>Apresentação</li></a>
-                <a class="list-item" href="#projects">
-                    <li>Projetos</li></a>
-                <a class="list-item" href="#contact">
-                    <li>Contato</li></a>
-              </ul>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <a class="list-item" href="#inicio">
+                        <li>Início</li>
+                    </a>
+                    <a class="list-item" href="#profile">
+                        <li>Apresentação</li>
+                    </a>
+                    <a class="list-item" href="#projects">
+                        <li>Projetos</li>
+                    </a>
+                    <a class="list-item" href="#contact">
+                        <li>Contato</li>
+                    </a>
+                </ul>
             </nav>
             <div class="menu">
               <span class="bar"></span>
@@ -27,7 +31,7 @@
               <span class="bar"></span>
             </div>
         </header>
-        <H1>Procurando um desenvolvedor Front-End?</H1>
+        <H1 class="header-title">Procurando um desenvolvedor Front-End?</H1>
         <svg class="arrows">
             <path class="a1" d="M0 0 L30 32 L60 0"></path>
             <path class="a2" d="M0 20 L30 52 L60 20"></path>
@@ -55,29 +59,31 @@
                 <div class="divider"></div>
                 <h4>Tecnologias: HTML, CSS, JavaScript, React, Git, GitHub </h4>
                 <div class="icon-container">
-                    <img class="icon-item" src="./assets/html-branco.jpg" />
-                    <img class="icon-item" src="./assets/css-branco.jpg" />
-                    <img class="icon-item" src="./assets/js.png" />
-                    <img class="icon-item1" src="./assets/react-branco.png" />
-                    <img class="icon-item1" src="./assets/git-branco.jpg" />
-                    <img class="icon-item1" src="./assets/github-logo.jpg" />
+                    <img class="icon-item" src="./assets/html-branco.jpg" width="60" />
+                    <img class="icon-item" src="./assets/css-branco.jpg" width="60" />
+                    <img class="icon-item" src="./assets/js.png" width="60" />
+                    <img class="icon-item1" src="./assets/react-branco.png" width="60" />
+                    <img class="icon-item1" src="./assets/git-branco.jpg" width="60" />
+                    <img class="icon-item1" src="./assets/github-logo.jpg" width="60" />
                 </div>
             </div>
         </div>
     <div class="profile-sinopse">
         <H1 class="sobre">Sobre mim...</H1>
         <br>
-        <p>Atualmente estou fazendo faculdade na Unip e cursos de programação, estou me aprimorando em React e JavaScript 
-        com projetos, Comprometido em criar experiências de usuário profissional e aberto a oportunidades de aprendizado e colaboração.</p>
+        <p>Atualmente, estou matriculado na Universidade Paulista (UNIP), onde estou cursando minha graduação.
+            Além disso, estou investindo meu tempo em cursos de programação, com foco no aprimoramento das habilidades em React e JavaScript, através da realização de projetos práticos.</p>
         <br>
-        <p>Estou constantemente em busca de novos desafios e uma oportunidades para aplicar meu conhecimento em projetos práticos. 
-        Acredito que a verdadeira maestria em programação só é alcançada quando colocamos na prática o que aprendemos. 
-        É por isso que estou pronto para mergulhar de cabeça em desafios complexos e colaborar em projetos que incluem criatividade 
-        e habilidade técnica.</p>
+        <p>Tenho um compromisso sério com a criação de experiências de usuário excepcionais e estou aberto a oportunidades 
+           que me permitam aprender e colaborar.
+        </p>
         <br>
-        <p>No entanto, a minha jornada não é uma jornada solitária. Estou aberto a oportunidades de aprendizado e colaboração. 
-        Acredito que o compartilhamento de conhecimento e a sinergia entre colegas são essenciais para o crescimento profissional. 
-        Estou ansioso para trabalhar lado a lado com outros profissionais apaixonados
+        <p>Estou constantemente em busca de novos desafios, pois acredito que a verdadeira maestria em programação só é alcançada quando aplicamos nossos conhecimentos em situações do mundo real.
+           Estou disposto a enfrentar desafios complexos e colaborar em projetos que exijam criatividade e competência técnica.
+        </p>
+        <br>
+        <p>Entretanto, minha jornada não é solitária. Estou totalmente aberto a oportunidades de aprendizado e colaboração, pois acredito que compartilhar conhecimento e trabalhar em equipe com colegas são fundamentais para o crescimento profissional.
+            Estou ansioso para colaborar com outros profissionais igualmente apaixonados.
         </p>  
         </div>
     </div>   
@@ -130,9 +136,7 @@
 <section class="container-formulario" id="contact">
     <div class="card-formulario">
         <div class="info-formulario">
-            <form action="https://formsubmit.co/ajax/cauaclemente07@gmail.com"
-            method="post"
-             data-form>
+            <form action="https://formsubmit.co/ajax/cauaclemente07@gmail.com" method="post" data-form>
                 <h3 class="contato-comigo">Entre em contato comigo</h3>
             <label>
                 Seu Nome:
@@ -144,11 +148,12 @@
             </label>
             <label>
                 Seu Telefone:
-                <input type="tel" name="fone" id="fone"  placeholder="(11) 92222-2222" minlength="11" maxlength="15"/>
+                <input type="tel" name="fone" id="fone"  placeholder="(11) 92222-2222" minlength="11" 
+                maxlength="15"/>
             </label>
             <label>
                 Assunto
-            <select name="name" id="slection-assunto"  >
+            <select name="name" id="slection-assunto">
                 
                 <option value="Recrutamento">Recrutamento</option>
                 <option value="Orçamento">Orçamento</option>
@@ -156,7 +161,8 @@
             </label>
             <label>
                 Deixe sua mensagem:
-                <textarea name="mensagem"  id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                <textarea name="mensagem"  id="mensagem" placeholder="Digite sua mensagem" 
+                required></textarea>
             </label>
             <button type="submit" data-button>Enviar</button>
             </form>
