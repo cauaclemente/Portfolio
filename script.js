@@ -20,7 +20,7 @@ document.getElementById("radio1").checked = true;
 
 setInterval(function () {
   nextImage();
-}, 6000);
+}, 5000);
 
 function nextImage() {
   count++;

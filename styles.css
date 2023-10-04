@@ -319,7 +319,7 @@ h4 {
 .slide {
     width: 25%;
     position: relative;
-    transition: 6s;
+    transition: 5s;
 }
 
 .slide img{
@@ -820,7 +820,7 @@ textarea:focus {
         cursor: pointer;
         position: fixed;
         top: 20px;
-        right: 280px;
+        margin-right: 30%;
         z-index: 2;
     }
 
@@ -849,12 +849,7 @@ textarea:focus {
     font-size: 50px;
     } 
 }    
-    @media (min-width: 400px) and (max-width: 420px) {
-    .manual-navigation {
-        margin-left: -50px;
-        margin-bottom: 100px;
-    }
-}
+
 
 @media (min-width: 420px) and (max-width: 1020px){
     .hero-container {
@@ -955,6 +950,8 @@ textarea:focus {
         margin-left: 70px;
     }
 
+    
+
 }
 
 @media (min-width: 1020px) {
@@ -1015,8 +1012,7 @@ textarea:focus {
         cursor: pointer;
         position: fixed;
         top: 20px;
-        right: 330px;
-        z-index: 2;
+        right: 150px;
     }
 
     .navbar {
@@ -1052,6 +1048,21 @@ textarea:focus {
         padding: 5px;
     }
 
+    .menu {
+        margin-right: 48%;
+    }
+
+    .navbar {
+        margin-top: -30px;
+    }
+
+    .nav-menu {
+        height: 10px;
+        margin-bottom: 100px;
+        
+    }
+    
+
 }
 
 @media (max-width: 440px){
@@ -1071,12 +1082,36 @@ textarea:focus {
         margin-bottom: 50px;
         margin-right: 25px;
     }
+
+    .menu {
+        margin-right: 180px;
+    }
+
+    .nav-menu {
+        margin-top: 100px;
+        margin-left: 50px;
+    }
 }
 
 @media (max-width:400px) {
     .manual-btn {
         margin-bottom: 120px;
         margin-right: 70px;
+    }
+
+    .menu {
+        margin-right: 115px;
+    }
+    
+}
+
+@media (max-width: 299px) {
+    .menu {
+        margin-right: 15%;
+    }
+
+    .navbar{
+        width: 150px;
     }
 }
 
