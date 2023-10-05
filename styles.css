@@ -282,6 +282,7 @@ h4 {
     margin-left: 120px;
     margin-bottom: 10px;
     transition: 1s;
+    text-decoration: none;
 }
 
 .curriculo:hover {
