@@ -42,7 +42,6 @@ class FormSubmit {
     this.sendForm = this.sendForm.bind(this);
   }
 
-
   displaySuccess() {
     this.form.innerHTML = this.settings.success;
   }

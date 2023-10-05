@@ -275,6 +275,21 @@ h4 {
     font-size: 40px;
 }
 
+.curriculo {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin-left: 120px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+.curriculo:hover {
+    background-color: #ed04f5;
+    color:#000 ;
+    transform: scale(1.05);
+}
+
 .project-container{
     height: 110%;
     width: 100%;
@@ -475,13 +490,16 @@ textarea {
     font-size: 25px;
     font-weight: 700;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 1s;
  }
 
 button:focus,
 button:hover{
     color: #fff;
     outline: none;
+    transform: scale(1.05);
+    background-color: #ed04f5;
+    color: #000;
 }
 
 button:disabled{
@@ -692,7 +710,6 @@ textarea:focus {
     .nav-menu {
         margin-top: 20%;
     }
-
 }
 
 @media (max-width: 420px) {
@@ -794,6 +811,7 @@ textarea:focus {
 
     button {
         margin-left: 60px;
+        width: 100px;
     }
 
     nav{
@@ -998,6 +1016,11 @@ textarea:focus {
         height: 500px;
     }
 
+    .curriculo {
+        font-size: 20px;
+        margin-left: 30%;
+    }
+
     .slide img {
         width: 110%;
     }
@@ -1035,7 +1058,8 @@ textarea:focus {
     }
 
     button {
-        margin-left: 50px;
+        margin-left: 40px;
+        width: 100px;
     }
 }
 
@@ -1103,6 +1127,9 @@ textarea:focus {
         margin-right: 115px;
     }
     
+    .curriculo {
+        margin-left: 30%
+    }
 }
 
 @media (max-width: 299px) {
@@ -1112,6 +1139,10 @@ textarea:focus {
 
     .navbar{
         width: 150px;
+    }
+
+    button {
+        margin-left: 30px;
     }
 }
 
