@@ -1,3 +1,5 @@
+AOS.init();
+
 const Menu = document.querySelector(".menu");
 const Bar = document.querySelector(".navbar");
 
@@ -20,11 +22,11 @@ document.getElementById("radio1").checked = true;
 
 setInterval(function () {
   nextImage();
-}, 5000);
+}, 8000);
 
 function nextImage() {
   count++;
-  if (count > 4) {
+  if (count > 5) {
     count = 1;
   }
 

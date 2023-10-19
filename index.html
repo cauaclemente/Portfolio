@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Cauã Clemente | Portfolio</title>
+
 </head>
 <body>
     <section class="hero-container" id="#index" >
@@ -31,7 +34,7 @@
               <span class="bar"></span>
             </div>
         </header>
-        <H1 class="header-title">Procurando um desenvolvedor Front-End?</H1>
+        <H1 class="header-title" data-aos="zoom-in-up" data-aos-duration="2000">Procurando um desenvolvedor Front-End?</H1>
         <svg class="arrows">
             <path class="a1" d="M0 0 L30 32 L60 0"></path>
             <path class="a2" d="M0 20 L30 52 L60 20"></path>
@@ -39,8 +42,8 @@
         </svg>           
     </section>
 <div class="content-container" id="profile">
-    <div class="profile-container">
-        <div class="profile-content">
+    <div class="profile-container" >
+        <div class="profile-content" data-aos="fade-up-right" data-aos-delay="200">
             <div class="profile-card">
                 <img class="profile-image" src="./assets/profile2.jpg">
                 <span class="name-text">Cauã Clemente</span>
@@ -68,7 +71,7 @@
                 </div>
             </div>
         </div>
-    <div class="profile-sinopse">
+    <div class="profile-sinopse" data-aos="fade-up" data-aos-delay="300">
         <H1 class="sobre">Sobre mim...</H1>
         <br>
         <p>Atualmente, estou matriculado na Universidade Paulista (UNIP), onde estou cursando minha graduação.
@@ -94,7 +97,7 @@
     </div> 
 
 <div class="project-container">
-    <div class ="slider" id="projects">
+    <div class ="slider" id="projects" data-aos="zoom-in" data-aos-duration="1000">
         <h3 class="info">
             *Ao clicar no projeto você será redirecionado ao GitHub. Caso queira acessar o site no sobre do repositorio tem o link
         </h3>
@@ -103,6 +106,7 @@
             <input type="radio" name="radio-btn" id="radio2">
             <input type="radio" name="radio-btn" id="radio3">
             <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
         <div class="slide first">
                 <a href="https://github.com/cauaclemente/Site-de-Venda-de-Ingressos-do-Filme-The-Batman-em-React-" target="_blank">
                 <img src="./assets/bat-modificado.jpg" alt="imagem 2">
@@ -123,12 +127,18 @@
                 <img src="./assets/Buscador (1).jpg" alt="imagem 4">
             </a>
             </div>
+            <div class="slide">
+                <a href="https://github.com/cauaclemente/site-para-barbearia-pires" target="_blank">
+                    <img src="./assets/barbearia.png" alt="imagem 5">
+                </a>
+            </div>
         </div>
             <div class="navigation-auto">
                 <div class="auto-btn10"></div>
                 <div class="auto-btn20"></div>
                 <div class="auto-btn30"></div>
                 <div class="auto-btn40"></div>
+                <div class="auto-btn50"></div>
         </div>
             
             </div>
@@ -137,11 +147,12 @@
                 <label for="radio2" class="manual-btn"></label>
                 <label for="radio3" class="manual-btn"></label>
                 <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
             </div>
         </div>
 
         <section class="container-formulario" id="contact">
-            <div class="card-formulario">
+            <div class="card-formulario" data-aos="zoom-out" data-aos-duration="1000">
                 <div class="info-formulario">
                     <form action="https://formsubmit.co/ajax/cauaclemente07@gmail.com" method="post" data-form>
                         <h3 class="contato-comigo">Entre em contato comigo</h3>

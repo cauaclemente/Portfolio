@@ -310,8 +310,6 @@ h4 {
     height: 800px;
     overflow: hidden;
     border-radius: 15px;
-    
-
 }
 
 .info {
@@ -385,6 +383,10 @@ h4 {
     margin-left: -75%;
 }
 
+#radio5:checked ~ .first {
+    margin-left: -100%;
+}
+
 #radio1:checked ~ .navigation-auto .auto-btn10{
     background-color: #ff0000;
 }
@@ -395,6 +397,10 @@ h4 {
     background-color: #ff0000;
 }
 #radio4:checked ~ .navigation-auto .auto-btn40{
+    background-color: #ff0000;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn50{
     background-color: #ff0000;
 }
 
@@ -799,10 +805,12 @@ textarea:focus {
 
     .manual-navigation {
         margin-top: 100%;
+        margin-left: -30px;
         
     }
     .manual-btn {
         margin-top: 100px;
+        margin-left: -5px;
     }
 
     .info {
