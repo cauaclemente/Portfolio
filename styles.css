@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-image: url( 'https://th.bing.com/th/id/R.dedc58931faf72bdc41315c7962c454a?rik=%2bqxNH3dfZ8NOLw&pid=ImgRaw&r=0');
+    background-image: url('./assets/inicio-background.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -333,7 +333,7 @@ h4 {
 .slide {
     width: 25%;
     position: relative;
-    transition: 5s;
+    transition: 3s;
 }
 
 .slide img{
@@ -982,8 +982,6 @@ textarea:focus {
         margin-left: 70px;
     }
 
-    
-
 }
 
 @media (min-width: 1020px) {
@@ -997,12 +995,7 @@ textarea:focus {
 
 }
   
-@media (max-width: 340px) {
-    .manual-btn {
-        margin-top: 150px;
-        margin-right: 90px;
-    }
-    
+@media (max-width: 340px) {   
     .profile-card {
         padding: 1px;
         margin-left: 30px;
@@ -1041,9 +1034,7 @@ textarea:focus {
     }
 
     .manual-navigation {
-        margin-left: -70px;
-        margin-bottom: 70px;
-        width: 20px;
+        margin-bottom: -38%;
     }
 
     .menu {
@@ -1074,7 +1065,7 @@ textarea:focus {
 
     button {
         margin-left: 40px;
-        width: 120px;
+        width: 110px;
     }
 }
 
@@ -1100,13 +1091,23 @@ textarea:focus {
         margin-bottom: 100px;
         
     }
+
+    button {
+        margin-left: 30%;
+    }
     
+    .card-formulario {
+        height: 70%;
+        width: 60%;
+        margin-top: 10%;
+        margin-bottom: 50px;
+    }
 
 }
 
 @media (max-width: 440px){
     .slider {
-        width: 250px;
+        width: 330px;
         height: 600px;
         margin-left: -170px;
         margin-right: -170px;
@@ -1114,7 +1115,7 @@ textarea:focus {
     }
 
     .slide img {
-        width: 300px;
+        width: 400px;
     }
 
     .manual-btn{
@@ -1145,6 +1146,30 @@ textarea:focus {
     .curriculo {
         margin-left: 30%
     }
+
+    button {
+        margin-left: 23%;
+    }
+    .contato-comigo {
+        margin-left: 20%;
+    }
+
+    .slider {
+        width: 85%;
+    }
+
+    .manual-btn {
+        margin-bottom: 40%;
+    }
+
+    .manual-navigation {
+        margin-left: -5%;
+    }
+
+    .header-title {
+        font-size: 50px;
+    }
+    
 }
 
 @media (max-width: 299px) {
@@ -1155,10 +1180,11 @@ textarea:focus {
     .navbar{
         width: 150px;
     }
-
     button {
-        margin-left: 30px;
+        margin-left: 20%;
     }
+
+    
 }
 
 @media (max-width: 260px) {
