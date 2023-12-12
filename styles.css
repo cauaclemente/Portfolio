@@ -292,7 +292,7 @@ h4 {
 }
 
 .project-container{
-    height: 110vh;
+    height: 120vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -344,7 +344,7 @@ h4 {
     position: absolute;
     width: 150px;
     margin-top: 40%;
-    margin-right: -90px;
+    margin-right: -80px;
     display: flex;
     justify-content: center;
 }
@@ -409,7 +409,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, rgb(4, 31, 90), #000);
+    background: linear-gradient(to bottom, rgb(1, 19, 58),  rgb(1, 21, 56));
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -666,7 +666,7 @@ textarea:focus {
     }
 
     .slide img {
-        width: 500px;
+        max-width: 800px;
         background-size: cover;
     }
 
@@ -795,10 +795,6 @@ textarea:focus {
         overflow: hidden;
         border-radius: 15px;
         margin-left: -95px;
-    }
-
-    .slide img {
-        width: 500px;
     }
 
     .manual-navigation {
@@ -1028,7 +1024,7 @@ textarea:focus {
     }
 
     .slide img {
-        width: 110%;
+        max-width: 900px;
     }
 
     .manual-navigation {
@@ -1153,9 +1149,14 @@ textarea:focus {
     }
 
     .slider {
-        width: 85%;
+        max-width: 450px;
     }
 
+    .slide img {
+        max-width: 800px;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
     .manual-btn {
         margin-bottom: 40%;
     }
@@ -1166,6 +1167,10 @@ textarea:focus {
 
     .header-title {
         font-size: 50px;
+    }
+
+    .hero-container {
+        background-position: 100%;
     }
     
 }
